@@ -1,0 +1,126 @@
+/* Mengganti font */
+@import url('https://fonts.googleapis.com/css2?family=Quando&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mulish&display=swap');
+.quando-font {
+    font-family: Quando;
+}
+.mulish-font {
+    font-family: Mulish;
+}
+
+/* Smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+
+/* Mengganti warna font menjadi hitam */
+.collapse ul li a {
+    color: black !important;
+}
+
+/* Mengganti warna background dropdown */
+.dropdown-menu {
+    background-color: #ECEAE5;
+}
+.dropdown-menu a:hover {
+    background-color: #DEE8F5 !important;
+}
+
+/* Modif Ukuran Nama dan Logo Kutika */
+img#KutikaLogoName {
+    width: 230px;
+    height: 70px;
+}
+/* Modif Ikon Keranjang */
+img#cartIcon {
+    width: 25px;
+    height: 25px;
+}
+
+/* Modifikasi warna today best deals*/
+.best-deal h1{
+    font-size: 25px;
+    color: #569DAA;
+}
+/* Style garis */
+hr {
+    width: 10%;
+    border: 1px solid #A95B46;
+}
+
+/* Mengganti font card item */
+.card-text s {
+    color: #7E7F86 !important;
+    font-family: Mulish;
+    font-size: 12 px !important;
+}
+
+/* Modif Penulis dalam product.html */
+h6#author {
+    font-weight: normal;
+    font-style: italic;
+    color: lightslategray;
+}
+
+/* Modif List Product di product.html */
+.list-product a {
+    font-style: normal;
+    color: #569DAA;
+    font-weight: 500;
+    text-decoration: none;
+}
+
+/* Modif ukuran dan posisi tengah cover buku dalam detail.html */
+img#cover-resize {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+/* Mengubah bentuk, warna, judul checkout */
+h2#secondheaderstyle {
+    font-family: Mulish;
+    text-align: center;
+    font-weight: bold;
+    color: lightslategray;
+}
+
+/* Ukuran cover produk di dalam cart.html */
+.cart-product{
+	width: 200px;
+}
+/* Modif tulisan continue shopping */
+a#continueshop {
+    color: #5EAAA8;
+    font-style: normal;
+    font-weight: 450;
+}
+
+/* Ukuran kartu harga */
+.summary{
+	margin : 10px;
+	padding : 20px;
+	background-color: #D3E0EA;
+}
+.summary h5{
+	font-size: 15px;
+	font-family: Mulish;
+}
+.summary hr{
+	width: 80%;
+}
+.summary button{
+	font-size: 20px;
+	font-family: Mulish;
+}
+.address span{
+	color: #65616E;
+	font-family: Mulish;
+}
+
+/* footer */
+h6#creator {
+    font-weight: 400;
+    color: grey;
+}

@@ -1,0 +1,79 @@
+extends layout
+block content
+    div(class="container-fluid p-0")
+        div(class="second-header")
+            h2#secondheaderstyle Checkout
+        div(class="alert alert-info mulish-font" role="alert") Hi, you have free shipping quota of 5 times this week
+
+        div(class="container")
+            div(class="row mb-3")
+                div(class="col-12 col-md-8 cart-table address")
+                    span(class="mulish-font") Billing Details
+                    hr
+                    form(method="post" action="/order" id="form-order")
+                        div(class="row")
+                            div(class="col-12 col-md-6")
+                                .form-floating
+                                    input#name.form-control.mulish-font(type='text', placeholder='Name', name='r_name')
+                                    label.mulish-font(for='name') Name
+
+                            div(class="mb-3 col-12 col-md-6")
+                                .form-floating
+                                    input#phone.form-control.mulish-font(type='text', placeholder='Phone', name='phone')
+                                    label.mulish-font(for='phone') Phone Number
+
+                            div(class="input-group mb-3")
+                                .form-floating.mb-3
+                                    input#email.form-control.mulish-font(type='email', placeholder='Email', name='email')
+                                    label.mulish-font(for='email') Email
+
+                            div(class="mb-3 col-12 col-md-8")
+                                .form-floating
+                                    input#city.form-control.mulish-font(type='text', placeholder='City', name='city')
+                                    label.mulish-font(for='city') City
+                            
+                            div(class="mb-3 col-12 col-md-4")
+                                .form-floating
+                                    input#Post.form-control.mulish-font(type='text', placeholder='Post', name='Post')
+                                    label.mulish-font(for='Post') Post Code
+                            div(class="mb-3")
+                                .form-floating.mb-3
+                                    textarea#Address.form-control.mulish-font(style='height: 100px', name='address', placeholder='Leave a address here')
+                                    label.mulish-font(for='Address') Address
+
+                div(class="col-12 col-md-4")
+                    div(class="summary shadow-lg rounded")
+                        table(class="table table-md")
+                            thead
+                                tr
+                                    td(colspan=3) ORDER SUMMARY
+
+                            tbody
+                                tr
+                                    td ITEMS
+                                    td #{total}
+                                    td Rp #{totalPrice}
+                                tr
+                                    td TOTAL COST
+                                    td
+                                    td Rp #{totalPrice}
+
+                        div(class="d-grid gap-2")
+                            button(type="button" id="order" class="btn btn-secondary btn-lg" data-bs-toggle="modal" data-bs-target="#address") PLACE ORDER
+
+        div(class="modal fade" id="address" tabindex="-1" aria-labelledby="addressLabel" aria-hidden="true")
+            div(class="modal-dialog")
+                div(class="modal-content")
+                    div(class="modal-header")
+                        h4(class="modal-title mulish-font" id="exampleModalLabel") Confirm Submit 
+                        button(type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close")
+
+                    div(class="modal-body") Are you sure submit this form ?
+	      
+                    div(class="modal-footer")
+                        button(type="button" id="submitBtn" class="btn btn-primary mulish-font") Submit
+
+    script.
+        document.querySelector('#submitBtn').addEventListener('click', event => {
+            document.getElementById("form-order").submit();
+        });

@@ -1,0 +1,33 @@
+extends layout
+block content
+    div(aria-live="polite" aria-atomic="true" class="d-flex justify-content-center align-items-center w-100")
+        div(class="toast align-items-center text-white bg-success border-0" role="alert" aria-live="assertive" aria-atomic="true")
+            div(class="d-flex")
+                div(class="toast-body") Successfully added to cart.
+                button(type="button" class="btn-close btn-close-white m-auto me-2" data-bs-dismiss="toast" aria-label="Close")
+
+    div(class='container')
+        for book in results
+            div(class='row')
+                div(class='col-12 col-md-5 pt-2')
+                    img#cover-resize(src='/images/'+book.image class='card-img-top')
+                
+                div(class='col-12 col-md-7 pt-3 pt-lg-2 ps-lg-5 mulish-font')
+                    h2 #{book.name} 
+                    //- Cek Harga diskon
+                    if(book.discount_price != undefined)
+                        s Rp #{book.price}
+                        p Rp #{book.discount_price}     
+                    else
+                        p Rp #{book.price} 
+                    br
+                    p
+                    | Toko Kutika mengutamakan kualitas buku cetak yang ditawarkan kepada pelanggannya. 
+                    | Setiap buku dijual dengan jaminan keaslian dan kualitas terjamin. Buku-buku yang tersedia 
+                    | di Toko Kutika berasal dari penerbit terpercaya dan telah melalui proses seleksi yang ketat, 
+                    | sehingga Anda dapat yakin bahwa Anda mendapatkan buku cetak dengan kualitas original yang terjamin.			
+                    br
+                    br
+                    button.btn.btn-outline-secondary.btn-lg(type='button', onclick='showSpinner('+book.id+')')
+                        span#spin.spinner-border.spinner-border-lg.d-none(role='status', aria-hidden='true')
+                        span#text Add to Cart                 

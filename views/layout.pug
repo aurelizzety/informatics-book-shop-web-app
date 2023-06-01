@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+    title= 'Kutika'
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    link(rel="Icon" href="/images/logoKutika.png")
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel="stylesheet" type="text/css" href="/stylesheets/bootstrap/css/bootstrap.css")
+    link(rel='stylesheet', href='/stylesheets/bootstrap/css/bootstrap.min.css')
+    link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css')
+  
+  body
+    include nav.pug
+
+    block content
+    
+    footer.p-0.text-center.pt-4.pb-4.mb-0
+        | Copyright &copy; 2023
+        h6#creator Created with &#x1F4AA;&#x1F3FB; by 2110511147
+    
+    script(src="/javascripts/bootstrap/js/bootstrap.bundle.js")
+    script(src="/javascripts/detail.js")
+    script(src="/javascripts/pagination.js")
