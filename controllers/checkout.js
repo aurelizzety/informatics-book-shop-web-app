@@ -29,7 +29,7 @@ exports.order = (req, res) => {
 
     order.inputRecipient((err, results) => {
       if(err) throw err;
-      for (var i=1 in books_order) {
+      for (var i = 1 in books_order) {
         order.inputOrder(results.insertId, books_order[i], (error, results) => {
           if(error) throw error;
           res.redirect('/');
