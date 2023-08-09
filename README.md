@@ -10,7 +10,7 @@ The purpose of creating Kutika is to establish a platform for shopping, purchasi
 
 ## Authors
 KUTIKA project was created by me, [Aurel Izzety](https://www.github.com/aurelizzety). 
-For software design and design aspects such as brand style, wireframe, and others, you can view them [Here]().
+For software design and design aspects such as brand style, wireframe, and others, you can view them [here](https://www.behance.net/gallery/177307673/KUTIKA-Informatics-bookshop-web-app-).
 
 ## Appreciation and Thanks
 Thank you for always being there throughout the process, providing advice, and motivation in the development of kutika project, my dear [@deandrasatriyosetiawan](https://github.com/deandrasatriyosetiawan) 🖤.
@@ -27,9 +27,10 @@ To get the application up and running, follow these steps:
 5. Install nodemon and run the website.
 ```bash
   npm install -g nodemon
+```
+```bash
   nodemon project_name
 ```
-
 You can see real-time changes by visiting the address http://localhost:3000 in your browser.
 To stop the server, press CTRL+C in the terminal.
 
