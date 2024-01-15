@@ -1,7 +1,7 @@
 
 # KUTIKA - Informatics bookshop web app 📖
 ![](https://github.com/aurelizzety/informatics-book-shop-web-app/blob/main/kutika_deviceframes_png.png)
-
+Cover MacBook Design by [DesignFrames](https://deviceframes.com/)
 
 ## Description
 This repository is a project from the web programming course. The created website application is named KUTIKA, which is a combination of "buKU informaTIKA".
